@@ -1,0 +1,150 @@
+<html>
+<head>
+	<title>Log In</title>
+	<link rel = "icon" type = "image/png" href = "logo.png">
+	<style type="text/css">
+		body
+		{
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+			background: url("back.jpg");	
+			background-size: cover; 
+			background-repeat: no-repeat;
+		}	
+		.box .inputbox
+		{
+			position: relative;
+		}
+		.box .inputbox input
+		{
+			margin-top: 10px;
+			width:100%;
+			padding: 10px 0px;
+			margin-bottom: 10px;
+			color: #424242;
+			border: none;
+			outline: none;
+			background: transparent;
+			border-bottom: 1px solid #000;  
+			font-size: 20px; 
+			letter-spacing: 1px;
+		}			 	   
+		.box .inputbox label
+		{
+			margin-top: 10px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			padding: 10px 0px;
+			font-size: 22px;
+			color: #424242;
+			pointer-events: none;
+			transition: 0.5s;
+		}
+		.box .inputbox input:focus ~ label,
+		.box .inputbox input:valid ~ label
+		{
+		    top: -29px;
+		    left: 0px;
+	  	    font-size: 18px;			
+	    }
+	    .box .inputbox input:hover ~ label
+		{
+		    border-color: #26C6DA;
+		    transform: scale(1.05);
+		    transition: 0.4s;			
+	    }	
+		button
+		{
+			margin-top: 50px;
+			width:150px;
+			height: 40px; 
+		    background-color:transparent; 
+			color: #000; 
+			border-color: #26C6DA; 
+		    font-size: 20px; 
+		    font-family: monherrat, sans-serif; 
+		    border-radius: 25px;
+		}								  
+		button:hover
+		{
+			color: #fff;
+			background-color: #26C6DA; 
+			transition: 1s;
+			border-color: transparent;
+		}
+		.box
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 450px;
+			padding: 40px;
+			background: transparent;
+		}
+		.box h1
+		{
+		    color: #000;
+		    text-align: center;
+		    font-family:  'Arvo';
+		    font-size: 60px;
+     	}
+     	.box .t1
+     	{
+     		text-decoration: none;
+     		padding: 0px; 
+     		text-align: center;
+     		font-size: 25px;
+     		font-family:  'Arvo';
+     	}
+     	a
+     	{
+     		text-decoration: none;
+     		color: #333;
+     	}
+     	#h2
+     	{
+
+     	}
+     	#h2:hover
+     	{
+     		color: #26C6DA;
+     	}
+     	form
+     	{
+     		margin-top: 10px;
+     	}
+     	#t2
+     	{
+     		color: #000;
+     		float: right;
+     	}
+     	#t2:hover
+     	{
+     		color: #26C6DA;
+     	}
+	</style>
+</head>
+<body>
+	<img style="filter:grayscale(100%); margin-top: 40px; margin-left: 40px; width: 100px; height: 100px;" src="logo.png">
+	<center>
+	<div class="box">
+		<h1>Log In</h1>
+		<div class="t1">New To Argold?<a id="h2" href="signup.html"> SignUp</a></div>
+		<form name="form1" action="home.html">
+			<div class="inputbox">
+				<input type="email" name="" required=""/>
+				<label>Email</label>
+			</div><br/>
+			<div class="inputbox">
+				<input type="password" name="" required=""/>
+				<label>Password</label>
+			</div><br/>
+			<input type="checkbox" style="float: left;"><div style="float: left;">Remember Me</div><div id="t2">Forgot Password?</div>
+			<button>Log In</button>
+		</form>	
+	</center>		
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+</head>
+<body>
+<div id="1"><p>Para 1</p><p>Para 2</p><p>Para 3</p></div>
+<button onclick=fun()>Button</button>
+<script>
+function fun()
+{
+	$("p:first-child").css("color", "red");  
+}  
+</script>
+</body>
+</html>
